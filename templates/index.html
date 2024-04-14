@@ -14,8 +14,9 @@
         <input type="submit" value="Upload">
     </form>
     {% if processed_image_path %}
-    <img src="{{ url_for('static', filename=processed_image_path) }}" alt="Processed Image" width="299" height="257">
-    {% endif %}
+    <img src="{{ processed_image_path }}" alt="Processed Image" width="299" height="257">
+    {%
+    endif %}
 </body>
 
 </html>

@@ -4,7 +4,7 @@ from flask import Flask, request, render_template, url_for
 import os
 from PIL import Image
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='uploads')
 
 @app.route('/')
 def home():
